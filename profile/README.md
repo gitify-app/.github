@@ -1,4 +1,4 @@
-# Welcome to Gitify
+## Welcome to Gitify
 
 ![Gitify][gitify-press]
 
