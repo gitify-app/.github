@@ -2,7 +2,7 @@
 
 ![Gitify][gitify-press]
 
-Gitify is a free and open source desktop application that brings GitHub notifications to your menu bar. 
+Gitify is a free and open source desktop application that brings Git notifications to your menu bar. 
 
 Available on macOS, Windows & Linux. 
 
