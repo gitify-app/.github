@@ -5,8 +5,9 @@
     "config:best-practices",
     ":enableVulnerabilityAlerts",
     ":semanticCommitTypeAll(chore)",
+    ":semanticCommitScope(deps)",
     ":separateMultipleMajorReleases",
-    "schedule:weekly"
+    ":rebaseStalePrs"
   ],
   "labels": ["dependency"],
   "packageRules": [
