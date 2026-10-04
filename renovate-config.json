@@ -7,5 +7,17 @@
     ":separateMultipleMajorReleases",
     "schedule:weekly"
   ],
-  "labels": ["dependency"]
+  "labels": ["dependency"],
+  "packageRules": [
+    {
+      "description": "Pin npm dependency ranges by default",
+      "matchManagers": ["npm"],
+      "rangeStrategy": "pin"
+    },
+    {
+      "description": "Use the dependency name in npm commit messages and PR titles",
+      "matchDatasources": ["npm"],
+      "commitMessageTopic": "{{depName}}"
+    }
+  ]
 }
