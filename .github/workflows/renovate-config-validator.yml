@@ -16,10 +16,9 @@ on:
     paths:
       - "*.json"
       - ".github/workflows/renovate-config-validator.yml"
+  # Runs on every pull request so the required status check is always reported.
+  # A path-filtered required check would block unrelated PRs (e.g. docs-only).
   pull_request:
-    paths:
-      - "*.json"
-      - ".github/workflows/renovate-config-validator.yml"
 
 permissions:
   contents: read
