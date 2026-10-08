@@ -10,13 +10,11 @@
     ":rebaseStalePrs",
     "schedule:weekly",
     "group:vitePlus",
-    "group:githubartifactactions",
+    "group:githubArtifactActions",
     "customManagers:biomeVersions",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "osvVulnerabilityAlerts": true,
-  "prConcurrentLimit": 10,
-  "prHourlyLimit": 2,
   "labels": ["dependency"],
   "packageRules": [
     {
