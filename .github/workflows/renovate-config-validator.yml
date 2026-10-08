@@ -58,7 +58,15 @@ jobs:
             echo "No Renovate config or preset files found to validate." >&2
             exit 1
           fi
+          # Resolve to absolute paths, then validate from an isolated working
+          # directory so the repository's own package.json (engines/devEngines)
+          # cannot block npm.
+          ABS=""
+          for f in ${FILES}; do
+            ABS="${ABS} $(realpath "$f")"
+          done
           echo "Validating:"
-          printf '  %s\n' ${FILES}
+          printf '  %s\n' ${ABS}
+          cd "$(mktemp -d)"
           # shellcheck disable=SC2086 -- intentional word-splitting of the file list
-          npx --yes --ignore-scripts --package renovate -- renovate-config-validator --strict ${FILES}
+          npx --yes --ignore-scripts --package renovate -- renovate-config-validator --strict ${ABS}
