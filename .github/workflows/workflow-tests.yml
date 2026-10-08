@@ -1,0 +1,33 @@
+name: Shared Workflow Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions: {}
+
+jobs:
+  test:
+    name: Test shared workflow contract
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+
+      - name: Test reporting modes and permissions
+        run: node --test tests/zizmor-workflow.test.mjs
+
+      - name: Validate workflows and caller fixtures
+        uses: docker://rhysd/actionlint:1.7.12@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667
+        with:
+          args: .github/workflows/zizmor.yml .github/workflows/workflow-tests.yml tests/fixtures/sarif-caller.yml tests/fixtures/annotations-caller.yml
