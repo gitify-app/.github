@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Onboarding entry point for gitify organization repositories",
+  "extends": ["./default"]
+}
