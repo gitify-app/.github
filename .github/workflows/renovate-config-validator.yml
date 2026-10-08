@@ -39,8 +39,7 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Determine files to validate
-        id: files
+      - name: Validate Renovate config
         env:
           INPUT_FILES: ${{ inputs.files }}
         run: |
@@ -60,10 +59,7 @@ jobs:
             echo "No Renovate config or preset files found to validate." >&2
             exit 1
           fi
-          echo "Validating: ${FILES}"
-          echo "files=${FILES}" >> "$GITHUB_OUTPUT"
-
-      - name: Validate Renovate config
-        run: >-
-          npx --yes --ignore-scripts --package renovate --
-          renovate-config-validator --strict ${{ steps.files.outputs.files }}
+          echo "Validating:"
+          printf '  %s\n' ${FILES}
+          # shellcheck disable=SC2086 -- intentional word-splitting of the file list
+          npx --yes --ignore-scripts --package renovate -- renovate-config-validator --strict ${FILES}
