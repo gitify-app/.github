@@ -8,15 +8,24 @@
     ":semanticCommitScope(deps)",
     ":separateMultipleMajorReleases",
     ":rebaseStalePrs",
-    "helpers:pinGitHubActionDigests",
+    "schedule:weekly",
+    "group:vitePlus",
+    "group:githubArtifactActions",
+    "customManagers:biomeVersions",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
+  "osvVulnerabilityAlerts": true,
   "labels": ["dependency"],
   "packageRules": [
     {
       "description": "Pin npm dependency ranges by default",
       "matchManagers": ["npm"],
       "rangeStrategy": "pin"
+    },
+    {
+      "description": "Keep engine ranges (for example node) as ranges rather than pinning them",
+      "matchDepTypes": ["engines"],
+      "rangeStrategy": "auto"
     },
     {
       "description": "Use the dependency name in npm commit messages and PR titles",
