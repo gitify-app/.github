@@ -16,7 +16,7 @@ This repository hosts the organization's shared [Renovate][renovate] preset, inh
 | `default.json`         | Baseline preset every repository inherits via `extends: ["github>gitify-app/.github"]`.         |
 | `renovate-config.json` | Onboarding entry point (`extends: ["./default"]`); Renovate suggests it automatically for new repositories. |
 
-## 🔗 Inheriting and extending
+### 🔗 Inheriting and extending
 
 A repository inherits the baseline by extending the shared preset, then adds its own configuration after it. Repository-level settings and later `packageRules` take precedence:
 
@@ -30,13 +30,13 @@ A repository inherits the baseline by extending the shared preset, then adds its
 }
 ```
 
-## 🛠️ Policy
+### 🛠️ Policy
 
 - 🗓️ Weekly updates, with grouped Vite+ and GitHub Actions updates.
 - 🟢 Node runtime tracks LTS only; `@types/node` majors are handled per repository.
 - 🛡️ OSV vulnerability alerts on; no automerge in the baseline.
 
-## ✅ Validation
+### ✅ Validation
 
 `default.json`, `renovate-config.json`, and any other preset files are validated with `renovate-config-validator --strict` by [`.github/workflows/renovate-config-validator.yml`](.github/workflows/renovate-config-validator.yml). Consumer repositories call the same reusable workflow to validate their own `renovate.json`.
 
