@@ -7,7 +7,9 @@
     ":semanticCommitTypeAll(chore)",
     ":semanticCommitScope(deps)",
     ":separateMultipleMajorReleases",
-    ":rebaseStalePrs"
+    ":rebaseStalePrs",
+    "helpers:pinGitHubActionDigests",
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
   "labels": ["dependency"],
   "packageRules": [
