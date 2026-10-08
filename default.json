@@ -15,22 +15,31 @@
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "osvVulnerabilityAlerts": true,
-  "labels": ["dependency"],
+  "labels": [
+    "dependency"
+  ],
   "packageRules": [
     {
       "description": "Pin npm dependency ranges by default",
-      "matchManagers": ["npm"],
+      "matchManagers": [
+        "npm"
+      ],
       "rangeStrategy": "pin"
     },
     {
       "description": "Keep engine ranges (for example node) as ranges rather than pinning them",
-      "matchDepTypes": ["engines"],
+      "matchDepTypes": [
+        "engines"
+      ],
       "rangeStrategy": "auto"
     },
     {
       "description": "Use the dependency name in npm commit messages and PR titles",
-      "matchDatasources": ["npm"],
+      "matchDatasources": [
+        "npm"
+      ],
       "commitMessageTopic": "{{depName}}"
     }
-  ]
+  ],
+  "thisIsNotAValidKey": true
 }
