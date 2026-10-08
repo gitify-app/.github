@@ -8,7 +8,6 @@
     ":semanticCommitScope(deps)",
     ":separateMultipleMajorReleases",
     ":rebaseStalePrs",
-    ":timezone(America/New_York)",
     "schedule:weekly",
     "group:vitePlus",
     "group:githubartifactactions",

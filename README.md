@@ -25,7 +25,7 @@ A repository inherits the baseline by extending the shared preset, then adds its
 
 ### Policy
 
-- Weekly updates in `America/New_York`, with grouped Vite+ and GitHub Actions updates.
+- Weekly updates, with grouped Vite+ and GitHub Actions updates.
 - Node runtime tracks LTS only; `@types/node` majors are handled per repository.
 - OSV vulnerability alerts on; PR volume capped; no automerge in the baseline.
 
