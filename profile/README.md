@@ -13,10 +13,13 @@
 
 ## 📦 Products
 
-- **[🐙 Gitify][gitify-repo]** — Git notifications in your menu bar (macOS · Windows · Linux) · [![release][gitify-release-badge]][gitify-releases] [![downloads][gitify-downloads-badge]][gitify-releases] [![license][gitify-license-badge]][gitify-license]
-- **[🪟 electron-menubar][emenubar-repo]** — build Electron menu bar apps · [![npm][emenubar-npm-badge]][emenubar-npm] [![docs][emenubar-docs-badge]][emenubar-docs]
-- **[🌐 website][website-repo]** — source of [gitify.io][website] · [![Astro][website-astro-badge]][website-repo]
-- **[🐧 gnome][gnome-repo] · [kde][kde-repo]** — tray-icon window anchoring on GNOME & KDE Plasma · [![GNOME][gnome-badge]][gnome-repo] [![KDE][kde-badge]][kde-repo]
+| Product | What it's for | Badges |
+| ------- | ------------- | ------ |
+| [🐙 Gitify][gitify-repo] | Git notifications in your menu bar (macOS · Windows · Linux) | [![release][gitify-release-badge]][gitify-releases] [![downloads][gitify-downloads-badge]][gitify-releases] [![license][gitify-license-badge]][gitify-license] |
+| [🪟 electron-menubar][emenubar-repo] | Build Electron menu bar apps | [![npm][emenubar-npm-badge]][emenubar-npm] [![docs][emenubar-docs-badge]][emenubar-docs] [![license][emenubar-license-badge]][emenubar-license] |
+| [🌐 website][website-repo] | Source of [gitify.io][website] | [![Astro][website-astro-badge]][website-repo] [![license][website-license-badge]][website-license] |
+| [🐧 gnome][gnome-repo] | Tray-icon window anchoring on GNOME | [![GNOME][gnome-badge]][gnome-repo] [![license][gnome-license-badge]][gnome-license] |
+| [🐧 kde][kde-repo] | Tray-icon window anchoring on KDE Plasma | [![KDE][kde-badge]][kde-repo] [![license][kde-license-badge]][kde-license] |
 
 ## 🤝 Get involved
 
@@ -45,14 +48,22 @@
 [emenubar-repo]: https://github.com/gitify-app/electron-menubar
 [emenubar-npm]: https://www.npmjs.com/package/electron-menubar
 [emenubar-docs]: https://electron-menubar.gitify.io/
+[emenubar-license]: https://github.com/gitify-app/electron-menubar/blob/main/LICENSE
 [emenubar-npm-badge]: https://img.shields.io/npm/v/electron-menubar?logo=npm&label=npm
 [emenubar-docs-badge]: https://img.shields.io/badge/docs-electron--menubar.gitify.io-1f6feb?logo=readthedocs&logoColor=white
+[emenubar-license-badge]: https://img.shields.io/github/license/gitify-app/electron-menubar?label=license
 
 [website-repo]: https://github.com/gitify-app/website
+[website-license]: https://github.com/gitify-app/website/blob/main/LICENSE
 [website-astro-badge]: https://img.shields.io/badge/built%20with-Astro-ff5d01?logo=astro&logoColor=white
+[website-license-badge]: https://img.shields.io/github/license/gitify-app/website?label=license
 
 [gnome-repo]: https://github.com/gitify-app/gnome
 [gnome-badge]: https://img.shields.io/badge/GNOME%20Shell-extension-4a86cf?logo=gnome&logoColor=white
+[gnome-license]: https://github.com/gitify-app/gnome/blob/main/LICENSE
+[gnome-license-badge]: https://img.shields.io/github/license/gitify-app/gnome?label=license
 
 [kde-repo]: https://github.com/gitify-app/kde
 [kde-badge]: https://img.shields.io/badge/KDE%20Plasma-KWin%20script-1d99f3?logo=kde&logoColor=white
+[kde-license]: https://github.com/gitify-app/kde/blob/main/LICENSE
+[kde-license-badge]: https://img.shields.io/github/license/gitify-app/kde?label=license
