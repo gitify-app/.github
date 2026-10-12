@@ -1,11 +1,15 @@
+<div align="center">
+
 # 🧩 Gitify Organization
+
+**Shared configuration & community health files** for the [Gitify][gitify-website] organization.
 
 [![Renovate enabled][renovate-badge]][renovate] [![Renovate config validation][validator-badge]][validator-actions] [![Conventional Commits][commits-badge]][commits] [![License][license-badge]][license]
 
-> Shared configuration and community health files for the [Gitify][gitify-website] organization.
-> See the [organization profile](profile/README.md).
+</div>
 
----
+> [!NOTE]
+> Public repository. It hosts our shared Renovate preset and renders the [organization profile](profile/README.md). See the [organization][gitify-org] for all projects.
 
 ## 📦 Shared Renovate configuration
 
@@ -44,8 +48,17 @@ A repository inherits the baseline by extending the shared preset, then adds its
 
 Released under the [MIT License](LICENSE).
 
+---
+
+<div align="center">
+
+<sub>Maintained by <a href="https://github.com/orgs/gitify-app/teams/gitify-core">Gitify Core</a> · <a href="https://gitify.io">gitify.io</a></sub>
+
+</div>
+
 <!-- LINK LABELS -->
 [gitify-website]: https://gitify.io
+[gitify-org]: https://github.com/gitify-app
 [renovate]: https://renovatebot.com/
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
 [validator-actions]: https://github.com/gitify-app/.github/actions/workflows/renovate-config-validator.yml
