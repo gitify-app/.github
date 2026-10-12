@@ -48,6 +48,14 @@ A repository inherits the baseline by extending the shared preset, then adds its
 
 Released under the [MIT License](LICENSE).
 
+---
+
+<div align="center">
+
+<sub>Maintained by <a href="https://github.com/orgs/gitify-app/teams/gitify-core">Gitify Core</a> · <a href="https://gitify.io">gitify.io</a></sub>
+
+</div>
+
 <!-- LINK LABELS -->
 [gitify-website]: https://gitify.io
 [gitify-org]: https://github.com/gitify-app

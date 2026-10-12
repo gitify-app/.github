@@ -9,7 +9,7 @@
 </div>
 
 > [!NOTE]
-> [Gitify][gitify-repo] is the app. [electron-menubar][emenubar-repo], [website][website-repo], [gnome][gnome-repo] & [kde][kde-repo] are the supporting projects around it.
+> 🌟 **Public organization profile** — everything we build is open source under [gitify-app][gitify-org].
 
 ## 📦 Products
 
@@ -25,8 +25,19 @@
 
 - ⭐ **Star & watch** [Gitify][gitify-repo] to follow new releases.
 - 🐛 **Report a bug** or **request a feature** via [issues][gitify-issues].
-- 🧑💻 **Contribute** — start with the [contributing guide][gitify-contributing] and the [`good first issue`][gitify-good-first-issues] label.
+- 🧑💻 **Contribute** — see the [contributing guide][gitify-contributing].
 - 🌐 **Learn more** — downloads, docs & release notes at [gitify.io][website].
+
+> [!TIP]
+> New contributor? Look for the [`good first issue`][gitify-good-first-issues] label to find a great starting point.
+
+---
+
+<div align="center">
+
+<sub>Maintained by <a href="https://github.com/orgs/gitify-app/teams/gitify-core">Gitify Core</a> · <a href="https://gitify.io">gitify.io</a></sub>
+
+</div>
 
 <!-- LINK LABELS -->
 [gitify-org]: https://github.com/gitify-app
