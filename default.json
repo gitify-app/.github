@@ -31,6 +31,13 @@
       "description": "Use the dependency name in npm commit messages and PR titles",
       "matchDatasources": ["npm"],
       "commitMessageTopic": "{{depName}}"
+    },
+    {
+      "description": "Auto-merge digest updates for gitify-app/.github workflows",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["gitify-app/.github"],
+      "matchUpdateTypes": ["digest"],
+      "automerge": true
     }
   ]
 }
