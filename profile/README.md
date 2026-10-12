@@ -10,8 +10,7 @@
 
 </div>
 
-> [!NOTE]
-> 🌟 **Public organization profile** — everything we build is open source under [gitify-app][gitify-org].
+---
 
 ## 📦 Products
 
