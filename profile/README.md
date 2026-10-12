@@ -4,6 +4,8 @@
 
 **Git notifications in your menu bar** — free & open source for macOS · Windows · Linux.
 
+![Gitify][gitify-press]
+
 [![Organization][org-badge]][gitify-org] [![Website][website-badge]][website] [![Stars][gitify-stars-badge]][gitify-repo]
 
 </div>
@@ -40,6 +42,7 @@
 </div>
 
 <!-- LINK LABELS -->
+[gitify-press]: https://raw.githubusercontent.com/gitify-app/website/main/public/images/social.png
 [gitify-org]: https://github.com/gitify-app
 [org-badge]: https://img.shields.io/badge/GitHub-gitify--app-181717?logo=github&logoColor=white
 [website]: https://gitify.io
