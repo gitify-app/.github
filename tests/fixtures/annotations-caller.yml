@@ -1,0 +1,18 @@
+name: Annotation caller fixture
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions: {}
+
+jobs:
+  zizmor:
+    permissions:
+      contents: read
+    # Keep this local lint fixture compatible with actionlint 1.7.12, which
+    # does not support $/ self-repository syntax. Production callers use SHAs.
+    uses: ./.github/workflows/zizmor.yml # zizmor: ignore[self-repository]
+    with:
+      advanced-security: false

@@ -1,0 +1,34 @@
+name: GitHub Actions Security Analysis
+
+on:
+  workflow_call:
+    inputs:
+      advanced-security:
+        description: Upload SARIF to code scanning. Disable for annotation-only reporting.
+        required: false
+        type: boolean
+        default: true
+
+# Intentionally inherit the caller's explicitly scoped job permissions.
+# SARIF needs contents: read, actions: read, and security-events: write;
+# annotation-only callers need only contents: read. This workflow cannot
+# elevate the caller's token permissions. See README.md for caller examples.
+
+jobs:
+  zizmor:
+    name: Run zizmor 🌈
+    runs-on: ubuntu-latest
+    env:
+      # Fork PRs always use annotations without attempting a SARIF upload.
+      ZIZMOR_ADVANCED_SECURITY: ${{ inputs.advanced-security && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Run zizmor 🌈
+        uses: zizmorcore/zizmor-action@cc914d7f3750a2d13d75c7f184a1060aa0e9d482 # v0.6.4
+        with:
+          advanced-security: ${{ env.ZIZMOR_ADVANCED_SECURITY }}
+          annotations: ${{ env.ZIZMOR_ADVANCED_SECURITY != 'true' }}
