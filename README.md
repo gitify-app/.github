@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧩 Gitify Organization
+# Gitify Organization
 
 **Community health files** for the [Gitify][gitify-website] organization.
 
