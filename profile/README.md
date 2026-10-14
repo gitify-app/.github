@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐙 Gitify
+# Gitify
 
 **Git notifications in your menu bar** — free & open source for macOS · Windows · Linux.
 
