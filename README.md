@@ -11,7 +11,7 @@
 > [!NOTE]
 > Public repository. It renders the [organization profile](profile/README.md) and hosts the organization's default community health files. The shared [Renovate][renovate] preset now lives in [`gitify-app/renovate-config`][renovate-config].
 
-## 🧩 What lives here
+## 📦 What lives here
 
 - 🖼️ [Organization profile](profile/README.md) — rendered on the [organization homepage][gitify-org].
 - 📋 Organization-wide default community health files (issue & pull request templates and similar).
